@@ -58,7 +58,7 @@ home__container {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 9px rgb(255, 255, 255, 30%);
+  box-shadow: inset 0 0 0 9px var(--img-shadow);
   order: 1;
   justify-self: center;
   width: 300px;
@@ -134,7 +134,7 @@ home__container {
   .home__img {
     width: 250px;
     height: 250px;
-    box-shadow: inset 0 0 0 8px rgb(255, 255, 255, 30%);
+    box-shadow: inset 0 0 0 8px var(--img-shadow);
   }
 
   .home__scroll {
@@ -151,7 +151,7 @@ home__container {
   .home__img {
     order: initial;
     justify-content: initial;
-    box-shadow: inset 0 0 0 6px rgb(255, 255, 255, 30%);
+    box-shadow: inset 0 0 0 6px var(--img-shadow);
     height: 200px;
     width: 200px;
   }

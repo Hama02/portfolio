@@ -8,6 +8,7 @@ import Services from "./components/Services/Services";
 import Qualification from "./components/Qualification/Qualification";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Dark from "./components/DarkTheme/Dark";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Header />
       <main className="main">
         <Home />
+        <Dark />
         <About />
         <Skills />
         <Services />
