@@ -1,7 +1,22 @@
-import React from "react";
+/* eslint-disable react/jsx-no-target-blank */
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_d09srrf",
+      "template_o69vkk3",
+      form.current,
+      "G0D-7AYuCEJyoAUxg"
+    );
+    e.target.reset();
+  };
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -35,7 +50,11 @@ const Contact = () => {
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">+216 50-508-475</span>
 
-              <a href="#4" className="contact__button">
+              <a
+                href="https://wa.me/21650508475"
+                target="_blank"
+                className="contact__button"
+              >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -58,7 +77,7 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
 
-          <form className="contact__form">
+          <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
