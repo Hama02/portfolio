@@ -7,7 +7,7 @@ const Data = () => {
       [
         "Full Stack Developer",
         "React Developer",
-        "Python Developer",
+        "MongoDB, SQL Developer",
         "NodeJs Developer",
       ],
       "text",
