@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/profile-modified.jpg";
+import AboutImg from "../../assets/pexels-nemuel-sereti-6424587.jpg";
 import Info from "./Info";
 import CV from "../../assets/Resume.pdf";
 
