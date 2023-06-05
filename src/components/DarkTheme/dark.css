@@ -55,6 +55,19 @@
   animation-timing-function: ease;
 }
 
+.mobile-theme {
+  position: absolute;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  top: 76px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.mobile-theme:hover {
+  color: #39ff14;
+}
+
 @keyframes pull {
 
   0%,
@@ -105,6 +118,12 @@
 
 @media screen and (max-width: 992px) {
   .dark {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-theme {
     display: none;
   }
 }

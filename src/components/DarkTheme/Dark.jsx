@@ -20,10 +20,19 @@ const Dark = () => {
   }, [isDark]);
 
   return (
-    <div className="dark">
-      <input type="checkbox" id="switch" onClick={themeToggler} />
-      <div class="line"></div>
-    </div>
+    <>
+      <div className="dark">
+        <input type="checkbox" id="switch" onClick={themeToggler} />
+        <div class="line"></div>
+      </div>
+      <div className="mobile-theme" onClick={themeToggler}>
+        {isDark === "true" ? (
+          <i class="uil uil-sun" style={{ transition: "0.5s" }}></i>
+        ) : (
+          <i class="uil uil-moon" style={{ transition: "0.5s" }}></i>
+        )}
+      </div>
+    </>
   );
 };
 
