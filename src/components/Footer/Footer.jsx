@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import { handleModal } from "../Modal/handleModal";
 
 const Footer = () => {
   return (
@@ -15,11 +14,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a
-              href="#portfolio"
-              className="footer__link"
-              onClick={() => handleModal("grid")}
-            >
+            <a href="#portfolio" className="footer__link">
               Projects
             </a>
           </li>

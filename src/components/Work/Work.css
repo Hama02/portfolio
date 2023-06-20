@@ -10,6 +10,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.25rem;
   border-radius: 1rem;
+  flex-basis: 314px;
 }
 
 .work__img {
@@ -60,6 +61,7 @@
 
   .work__card {
     padding: 1rem;
+    flex-basis: 314px;
   }
 
   .work__img {

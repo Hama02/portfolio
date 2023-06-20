@@ -9,7 +9,6 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Dark from "./components/DarkTheme/Dark";
 import Work from "./components/Work/Work";
-import Modal from "./components/Modal/Modal";
 
 const App = () => {
   return (
@@ -24,7 +23,6 @@ const App = () => {
         <Work />
         <Contact />
         <Footer />
-        <Modal />
       </main>
     </>
   );
