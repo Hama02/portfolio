@@ -1,7 +1,8 @@
 .work__container {
-  grid-template-columns: repeat(2, max-content);
   gap: 3rem;
   justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .work__card {
